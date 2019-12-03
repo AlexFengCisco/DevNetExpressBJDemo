@@ -75,3 +75,5 @@
     A python Smart log server , 
     when 'mission  completed!!' log received , trigger NX API to clear interface Loopback 1-3,
     mission start over.
+    
+![network diagrame](test_bed.png)
