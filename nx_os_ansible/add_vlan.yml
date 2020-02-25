@@ -1,0 +1,25 @@
+---
+
+- name: vlan provisioning
+  hosts: n9kv
+  connection: local
+  gather_facts: no
+
+
+  tasks:
+
+    - name: CREATE VLANS AND ASSIGN A NAME, USING VLAN_ID
+      nxos_vlan:
+        vlan_id: 15
+        name: test15
+    - name: Create aggregate of vlans
+      nxos_vlan:
+        aggregate:
+        - { vlan_id: 1234, name: test1234 }
+        - { vlan_id: 1235, name: test1235 }
+
+
+
+
+
+

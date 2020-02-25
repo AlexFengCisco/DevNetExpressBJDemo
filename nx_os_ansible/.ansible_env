@@ -1,0 +1,4 @@
+export ANSIBLE_NET_USERNAME=admin
+export ANSIBLE_NET_PASSWORD=cisco
+
+# needs to source .ansible_env

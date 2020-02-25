@@ -1,0 +1,27 @@
+---
+  #  https://docs.ansible.com/ansible/latest/modules/list_of_network_modules.html
+  #  check the reference link before make playbook
+  #  default transport is cli , you may change to nxapi
+
+  #  By Alex Feng
+  - name: create intface loopback and config ip address
+    hosts: n9kv
+    connection: local
+
+    tasks:
+      - name: create loopback interface
+        nxos_interface:
+              name: Loopback3
+              description: Configured by Ansible
+              state: present
+              #transport: nxapi
+
+      - name: add ip address to loopback
+        nxos_l3_interface:
+              name: Loopback3
+              ipv4: 3.3.3.3/32
+              #ansbtransport: nxapi
+        register: add_ipv4_address
+
+      - name: Dispaly config ip address result
+        debug: msg="{{add_ipv4_address}}"
