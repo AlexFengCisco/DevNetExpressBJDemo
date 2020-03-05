@@ -1,6 +1,6 @@
 ##  Use case  demo for DevNetExpress BJ
 
-### Homework , NX OS programming config and automatic check , offbox & onbox.
+### NX OS programming config and automatic check , offbox & onbox.
 
 #### Prepare Lab enviroment
     
