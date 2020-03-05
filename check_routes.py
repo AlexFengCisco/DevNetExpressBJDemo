@@ -30,4 +30,4 @@ for prefix in route_table_json['TABLE_vrf']['ROW_vrf']['TABLE_addrf']['ROW_addrf
         count +=1
 
 if count == 3:
-    syslog.syslog(1,'We got 3 routes , mission completed!!!!!!')
+    syslog.syslog(1,'We got 3 routes , mission completed!')
