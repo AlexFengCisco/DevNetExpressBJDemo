@@ -7,7 +7,7 @@ chardet==3.0.4
 cryptography==2.5
 future==0.18.2
 idna==2.7
-Jinja2==2.10
+Jinja2==2.11.3
 lxml==4.2.4
 MarkupSafe==1.0
 ncclient==0.6.0
